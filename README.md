@@ -1,5 +1,7 @@
 # KNA — Knauer Sanskrit-Russian Vocabulary
 
+_Created: 21-02-2026 · Last updated: 05-07-2026_
+
 This repository is part of the [Cologne Digital Sanskrit Lexicons](https://www.sanskrit-lexicon.uni-koeln.de/) project. It tracks corrections and enhancements for the digitization of Friedrich Knauer's *Sanskrit-Russian Vocabulary* (1908), a 3,271-entry Sanskrit-Russian lexicon extracted from his *Учебник санскритского языка* (Sanskrit Manual). The source file lives in the `csl-orig` sibling repository; this repo holds documentation, citation metadata, and issue tracking.
 
 ## Contents
@@ -87,6 +89,27 @@ No closed issues yet.
 - Source language of definitions: Russian.
 - Round-trip SLP1 ↔ IAST ↔ Devanagari is lossless for all correctly marked entries; exceptions are tracked with the `encoding` issue label.
 
+## Usage example
+
+`kna.txt` is not in this repo — it lives in the sibling `csl-orig` repo (see [Dependencies](CLAUDE.md) for the exact path) and is illustrated in [CLAUDE.md § Annotated Example Entry](CLAUDE.md) with the format's own reference entry (headword *aṃśa*, Russian gloss "плечо; доля; часть"):
+
+```
+<L>42<pc>5,1<k1>aMSa<k2>aMSa
+{#aMSa#}¦ <lex>m.</lex> плечо; доля; часть. <ls>Mn.</ls>
+<LEND>
+```
+
+To correct the Russian gloss with the org's `updateByLine.py` workflow, a change file addresses the entry's print line (42) with the old/new text pair:
+
+```
+42 old {#aMSa#}¦ <lex>m.</lex> плечо; доля; часть. <ls>Mn.</ls>
+42 new {#aMSa#}¦ <lex>m.</lex> плечо; доля; участь; часть. <ls>Mn.</ls>
+```
+
+```sh
+python updateByLine.py kna.txt change_kna_N.txt kna_corrected.txt
+```
+
 ## How it works
 
 ```mermaid
@@ -114,3 +137,5 @@ flowchart LR
 | Login | Contributions |
 |---|---|
 | [@gasyoun](https://github.com/gasyoun) | 3 |
+
+_Dr. Mārcis Gasūns_
