@@ -1,6 +1,6 @@
 # KNA — Knauer Sanskrit-Russian Vocabulary
 
-_Created: 21-02-2026 · Last updated: 05-07-2026_
+_Created: 21-02-2026 · Last updated: 11-07-2026_
 
 This repository is part of the [Cologne Digital Sanskrit Lexicons](https://www.sanskrit-lexicon.uni-koeln.de/) project. It tracks corrections and enhancements for the digitization of Friedrich Knauer's *Sanskrit-Russian Vocabulary* (1908), a 3,271-entry Sanskrit-Russian lexicon extracted from his *Учебник санскритского языка* (Sanskrit Manual). The source file lives in the `csl-orig` sibling repository; this repo holds documentation, citation metadata, and issue tracking.
 
@@ -8,9 +8,9 @@ This repository is part of the [Cologne Digital Sanskrit Lexicons](https://www.s
 
 | Item | Purpose |
 |---|---|
-| `CLAUDE.md` | Developer documentation for Claude Code and contributors |
-| `README.md` | This file — project overview |
-| `CITATION.cff` | Academic citation metadata in CFF 1.2.0 format |
+| [CLAUDE.md](https://github.com/sanskrit-lexicon/KNA/blob/main/CLAUDE.md) | Developer documentation for Claude Code and contributors |
+| [README.md](https://github.com/sanskrit-lexicon/KNA/blob/main/README.md) | This file — project overview |
+| [CITATION.cff](https://github.com/sanskrit-lexicon/KNA/blob/main/CITATION.cff) | Academic citation metadata in CFF 1.2.0 format |
 
 ## Timeline
 
@@ -91,7 +91,7 @@ No closed issues yet.
 
 ## Usage example
 
-`kna.txt` is not in this repo — it lives in the sibling `csl-orig` repo (see [Dependencies](CLAUDE.md) for the exact path) and is illustrated in [CLAUDE.md § Annotated Example Entry](CLAUDE.md) with the format's own reference entry (headword *aṃśa*, Russian gloss "плечо; доля; часть"):
+`kna.txt` is not in this repo — it lives in the sibling `csl-orig` repo (see [CLAUDE.md § Dependencies](https://github.com/sanskrit-lexicon/KNA/blob/main/CLAUDE.md#dependencies) for the exact path) and is illustrated in [CLAUDE.md § Annotated Example Entry](https://github.com/sanskrit-lexicon/KNA/blob/main/CLAUDE.md#annotated-example-entry) with the format's own reference entry (headword *aṃśa*, Russian gloss "плечо; доля; часть"):
 
 ```
 <L>42<pc>5,1<k1>aMSa<k2>aMSa
@@ -99,7 +99,7 @@ No closed issues yet.
 <LEND>
 ```
 
-To correct the Russian gloss with the org's `updateByLine.py` workflow, a change file addresses the entry's print line (42) with the old/new text pair:
+To correct the Russian gloss, changes are never written to the source file directly — they are expressed as an old/new change file and applied by `updateByLine.py`, per the canonical [Cologne correction workflow](https://github.com/sanskrit-lexicon/csl-corrections/blob/main/docs/correction-workflow.md). The change file addresses the entry's print line (42) with the old/new text pair:
 
 ```
 42 old {#aMSa#}¦ <lex>m.</lex> плечо; доля; часть. <ls>Mn.</ls>
