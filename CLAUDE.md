@@ -1,3 +1,5 @@
+_Created: 15-05-2026 · Last updated: 05-09-2026_
+
 # CLAUDE.md
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
@@ -121,3 +123,5 @@ All issues follow the [Sanskrit Lexicon issue taxonomy](https://github.com/sansk
 | `minor` | `#e4e669` | Targeted, self-contained fix |
 | `medium` | `#fbca04` | Standard unit of work |
 | `hard` | `#d93f0b` | Large effort spanning many sources or files |
+
+_Dr. Mārcis Gasūns_
