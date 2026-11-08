@@ -4,8 +4,16 @@ title: Knauer Sanskrit-Russian Vocabulary
 message: If you use this dataset, please cite both the digital edition and the printed source it digitises.
 license: CC-BY-SA-4.0
 repository-code: https://github.com/sanskrit-lexicon/KNA
-date-released: 1893-01-01
+date-released: 1908-01-01
 version: 1.0.0
+doi: 10.5281/zenodo.24054827
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.24054827
+    description: Concept DOI (resolves to the latest version of the KNA record)
+  - type: doi
+    value: 10.5281/zenodo.24054872
+    description: Version DOI for deposit v2 (recid 24054872; description corrected to Leipzig 1908)
 keywords:
   - sanskrit
   - lexicon
@@ -19,8 +27,8 @@ authors:
 preferred-citation:
   type: book
   title: Knauer Sanskrit-Russian Vocabulary
-  year: 1893
+  year: 1908
   authors:
     - family-names: "Knauer"
       given-names: "Friedrich"
-  notes: "German-Russian Sanskritist; estimated year"
+  notes: "Leipzig, 1908 — vocabulary appendix to Knauer's Sanskrit manual (the prior «1893, estimated year» was corrected to the repo timeline's 1908, H7887)"
