@@ -1,6 +1,8 @@
 # KNA — Knauer Sanskrit-Russian Vocabulary
 
-_Created: 21-02-2026 · Last updated: 11-07-2026_
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24054827.svg)](https://doi.org/10.5281/zenodo.24054827)
+
+_Created: 21-02-2026 · Last updated: 08-11-2026_
 
 This repository is part of the [Cologne Digital Sanskrit Lexicons](https://www.sanskrit-lexicon.uni-koeln.de/) project. It tracks corrections and enhancements for the digitization of Friedrich Knauer's *Sanskrit-Russian Vocabulary* (1908), a 3,271-entry Sanskrit-Russian lexicon extracted from his *Учебник санскритского языка* (Sanskrit Manual). The source file lives in the `csl-orig` sibling repository; this repo holds documentation, citation metadata, and issue tracking.
 
